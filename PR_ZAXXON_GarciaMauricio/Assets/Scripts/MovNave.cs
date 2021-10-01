@@ -30,7 +30,6 @@ void Start()
         if ((posX <= 15f || desp1X < 0f) && (posX > -15f || desp1X > 0f))
         {
             transform.Translate(Vector3.right * Time.deltaTime * Loslaos * desp1X, Space.World);
-            print(posX);
         }
 
         if ((posY <= 15f || desp1Y < 0f) && (posY > 1f || desp1Y > 0f)) 
