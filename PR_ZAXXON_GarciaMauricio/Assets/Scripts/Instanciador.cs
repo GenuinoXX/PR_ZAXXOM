@@ -7,7 +7,7 @@ public class Instanciador : MonoBehaviour
     [SerializeField] Transform initPos;
     [SerializeField] GameObject columna;
     float intervalo;
-    float desplX = 5f;
+    float desplX = 25f;
     // Start is called before the first frame update
     void Start()
     {

@@ -7,7 +7,7 @@ public class InstanPelota : MonoBehaviour
     [SerializeField] Transform initPos;
     [SerializeField] GameObject pelota;
     float intervalo;
-    float desplX = 5f;
+    float desplX = 10f;
     // Start is called before the first frame update
     void Start()
     {
