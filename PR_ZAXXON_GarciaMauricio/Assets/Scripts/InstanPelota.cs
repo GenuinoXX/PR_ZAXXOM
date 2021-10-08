@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Instanciador : MonoBehaviour
+public class InstanPelota : MonoBehaviour
 {
     [SerializeField] Transform initPos;
-    [SerializeField] GameObject columna;
+    [SerializeField] GameObject pelota;
     float intervalo;
     float desplX = 5f;
     // Start is called before the first frame update
@@ -15,7 +15,6 @@ public class Instanciador : MonoBehaviour
         StartCoroutine("CrearObstaculos");
         Vector3 destPos = initPos.position;
         Vector3 despl = new Vector3(desplX, 0, 0);
-
     }
 
     // Update is called once per frame
@@ -23,15 +22,15 @@ public class Instanciador : MonoBehaviour
     {
         
     }
-
     IEnumerator CrearObstaculos()
     {
         while (true)
         {
             float randomX = Random.Range(-15f, 15f);
-            Vector3 newPos = new Vector3(randomX, initPos.position.y, initPos.position.z);
-            Instantiate(columna, newPos, Quaternion.identity);
-            
+            float randomY = Random.Range(1f, 13f);
+            Vector3 newPos = new Vector3(randomX, randomY, initPos.position.z);
+            Instantiate(pelota, newPos, Quaternion.identity);
+
 
             yield return new WaitForSeconds(intervalo);
         }

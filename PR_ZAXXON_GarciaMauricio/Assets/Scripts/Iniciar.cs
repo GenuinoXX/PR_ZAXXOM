@@ -8,7 +8,7 @@ public class Iniciar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        VelNave = 50f;
+        VelNave = 75f;
     }
 
     // Update is called once per frame

@@ -32,12 +32,12 @@ void Start()
             transform.Translate(Vector3.right * Time.deltaTime * Loslaos * desp1X, Space.World);
         }
 
-        if ((posY <= 15f || desp1Y < 0f) && (posY > 1f || desp1Y > 0f)) 
+        if ((posY <= 13f || desp1Y < 0f) && (posY > 1f || desp1Y > 0f)) 
         {
             transform.Translate(Vector3.up * Time.deltaTime * Altura * desp1Y, Space.World);
         }
 
-        if ((posP <= 1000f || desp1P < 0f) && (posP > 0f || desp1P > 0f)) 
+        if ((posP <= 15f || desp1P < 0f) && (posP > 0f || desp1P > 0f)) 
         {
             transform.Translate(Vector3.forward * Time.deltaTime * Palante * desp1P, Space.World);
         }
