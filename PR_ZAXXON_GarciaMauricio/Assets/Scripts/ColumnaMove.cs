@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class ColumnaMove : MonoBehaviour
 {
-    float rapidez;
+    [SerializeField] GameObject initObject;
+    Iniciar iniciar;
+    float Vel;
     // Start is called before the first frame update
     void Start()
     {
-        rapidez = 10f;
+        initObject = GameObject.Find("Iniciar");
+        iniciar= initObject.GetComponent<Iniciar>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.back * Time.deltaTime * rapidez);
-    }
-    IEnumerator CrearCloumna()
-    {
-        while (true)
+        Vel = iniciar.VelNave;
+        transform.Translate(Vector3.back * Time.deltaTime * Vel);
+        float posZ = transform.position.z;
+        if (posZ < -35)
         {
-            yield return new WaitForSeconds("intervalo");
-            print("khe pazaa");
-
+            Destroy(gameObject);
         }
     }
+    
 }
