@@ -11,9 +11,9 @@ public class MovNave : MonoBehaviour
 // Start is called before the first frame update
 void Start()
     {
-        Loslaos = 50f;
+        Loslaos = 25f;
         Palante = 50f;
-        Altura = 50f;
+        Altura = 25f;
     }
 
     // Update is called once per frame

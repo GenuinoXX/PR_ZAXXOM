@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7806852957514074852}
   - component: {fileID: 8731089924249051931}
+  - component: {fileID: 5101825408574782987}
   m_Layer: 0
   m_Name: alma_columna
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3549132977915643302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 7, z: 400}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 8, z: 1}
   m_Children:
   - {fileID: 602155684715814946}
   m_Father: {fileID: 0}
@@ -45,6 +46,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initObject: {fileID: 3549132977915643302}
+--- !u!65 &5101825408574782987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3549132977915643302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.06, y: 2, z: 1.06}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4269609366044779939
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +70,7 @@ GameObject:
   - component: {fileID: 602155684715814946}
   - component: {fileID: 1734272435758177163}
   - component: {fileID: 3448760326864201239}
-  - component: {fileID: 2651629113219215344}
+  - component: {fileID: 1958061756214584968}
   m_Layer: 0
   m_Name: Columna
   m_TagString: Untagged
@@ -73,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 4269609366044779939}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 8.206189, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7806852957514074852}
   m_RootOrder: 0
@@ -127,17 +141,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2651629113219215344
-CapsuleCollider:
+--- !u!64 &1958061756214584968
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4269609366044779939}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 59681af314e62b341ba0e734bef465bc, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}

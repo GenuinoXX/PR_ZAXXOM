@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5968971187300164238}
   - component: {fileID: -8689403325286055017}
+  - component: {fileID: 3752540509817501242}
   m_Layer: 0
   m_Name: alma_pelota
   m_TagString: Untagged
@@ -45,6 +46,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initObject: {fileID: 1400065252043258887}
+--- !u!135 &3752540509817501242
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400065252043258887}
+  m_Material: {fileID: 13400000, guid: 59681af314e62b341ba0e734bef465bc, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2207700321806914473
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +148,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2207700321806914473}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 59681af314e62b341ba0e734bef465bc, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
