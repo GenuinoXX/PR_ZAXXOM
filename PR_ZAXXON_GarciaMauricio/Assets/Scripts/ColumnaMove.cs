@@ -11,7 +11,7 @@ public class ColumnaMove : MonoBehaviour
     void Start()
     {
         initObject = GameObject.Find("Iniciar");
-        iniciar= initObject.GetComponent<Iniciar>();
+        iniciar = initObject.GetComponent<Iniciar>();
     }
 
     // Update is called once per frame
@@ -25,5 +25,5 @@ public class ColumnaMove : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
 }
