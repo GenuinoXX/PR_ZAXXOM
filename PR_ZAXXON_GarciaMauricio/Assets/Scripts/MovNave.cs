@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MovNave : MonoBehaviour
 
@@ -9,12 +11,16 @@ public class MovNave : MonoBehaviour
     [SerializeField] public float Loslaos;
     [SerializeField] public float Altura;
     [SerializeField] MeshRenderer myMesh;
+    [SerializeField] Image Vidas_Img;
+    [SerializeField] Sprite[] Vidas_Spr;
     // Start is called before the first frame update
     void Start()
     {
         Loslaos = 25f;
         Palante = 50f;
         Altura = 25f;
+        int Vidas = GameManager.Vidas_Jug;
+        Vidas_Img.sprite = Vidas_Spr[Vidas];
     }
 
     // Update is called once per frame
@@ -48,7 +54,8 @@ public class MovNave : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstaculo")
         {
-            myMesh.enabled = false;
+            GameManager.Vidas_Jug--;
+            SceneManager.LoadScene(1);
         }
     }
 }
