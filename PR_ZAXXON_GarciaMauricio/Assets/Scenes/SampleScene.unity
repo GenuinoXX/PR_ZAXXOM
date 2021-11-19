@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 9119818}
   - component: {fileID: 9119817}
   - component: {fileID: 9119816}
-  - component: {fileID: 9119815}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -143,18 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &9119815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9119814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &9119816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,7 +997,11 @@ MonoBehaviour:
   Altura: 0
   myMesh: {fileID: 1240641520}
   Vidas_Img: {fileID: 1671139454}
-  Vidas_Spr: []
+  Vidas_Spr:
+  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 8909117659596098692, guid: 66b17d9389bf7744d92eb1e6ea157536, type: 3}
+  - {fileID: 1288761392300247612, guid: 66b17d9389bf7744d92eb1e6ea157536, type: 3}
+  - {fileID: 2153646289433819626, guid: 66b17d9389bf7744d92eb1e6ea157536, type: 3}
 --- !u!4 &1970864029
 Transform:
   m_ObjectHideFlags: 0

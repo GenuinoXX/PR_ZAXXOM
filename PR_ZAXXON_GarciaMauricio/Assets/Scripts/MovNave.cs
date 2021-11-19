@@ -56,6 +56,11 @@ public class MovNave : MonoBehaviour
         {
             GameManager.Vidas_Jug--;
             SceneManager.LoadScene(1);
+
+            if (GameManager.Vidas_Jug == 0) 
+            {
+                SceneManager.LoadScene(2);
+            }
         }
     }
 }
