@@ -14,6 +14,7 @@ public class Bot_Menu : MonoBehaviour
     public void Juego()
     {
         GameManager.Vidas_Jug = 3;
+        GameManager.Punt = 0;
         SceneManager.LoadScene(1);
     }
     public void Menu_Punt()
