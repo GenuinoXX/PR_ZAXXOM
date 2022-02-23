@@ -9,12 +9,12 @@ public class Puntuacion_Fin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        PuntText.text = " " + Puntuacion.Punt_Final;
     }
 
     // Update is called once per frame
     void Update()
     {
-        PuntText.text = " " + Puntuacion.Punt_Final;
+
     }
 }
