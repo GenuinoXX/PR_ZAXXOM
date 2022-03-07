@@ -27,5 +27,10 @@ public class BalaMove : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "Obstaculo")
+        {
+            Destroy(gameObject);
+        }
     }
 }

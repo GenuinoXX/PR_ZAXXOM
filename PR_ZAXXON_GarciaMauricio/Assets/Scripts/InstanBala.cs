@@ -9,10 +9,15 @@ public class InstanBala : MonoBehaviour
     public float velDisp;
     private float inicioDisp;
     public float tiempoDisp;
+    AudioSource audioSource;
+    [SerializeField] AudioClip motor;
+    [SerializeField] AudioClip Disp;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = 0.05f;
+        audioSource.PlayOneShot(motor, 1f);
     }
 
     // Update is called once per frame
@@ -26,6 +31,8 @@ public class InstanBala : MonoBehaviour
 
             balaPrefabInstanc = Instantiate(balaPrefab, lanzador.position, Quaternion.identity);
             balaPrefabInstanc.AddForce(lanzador.forward * 100 * velDisp);
+
+            audioSource.PlayOneShot(Disp, 1f);
         }
     }
 }

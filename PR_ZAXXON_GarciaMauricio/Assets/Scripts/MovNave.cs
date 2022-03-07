@@ -13,6 +13,7 @@ public class MovNave : MonoBehaviour
     [SerializeField] MeshRenderer myMesh;
     [SerializeField] Image Vidas_Img;
     [SerializeField] Sprite[] Vidas_Spr;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
