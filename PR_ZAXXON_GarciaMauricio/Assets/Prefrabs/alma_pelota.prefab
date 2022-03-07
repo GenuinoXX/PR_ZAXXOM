@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5968971187300164238}
-  - component: {fileID: -8689403325286055017}
   - component: {fileID: 3752540509817501242}
+  - component: {fileID: -6893094429994754864}
   m_Layer: 0
   m_Name: alma_pelota
-  m_TagString: Obstaculo
+  m_TagString: Pelota
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,19 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8689403325286055017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400065252043258887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99fe42ab1617b13439b3fb8aa3d44e65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initObject: {fileID: 1400065252043258887}
 --- !u!135 &3752540509817501242
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -59,6 +46,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6893094429994754864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400065252043258887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c329e028d84de754f87e52ee0d85cdc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initObject: {fileID: 1400065252043258887}
 --- !u!1 &2207700321806914473
 GameObject:
   m_ObjectHideFlags: 0
